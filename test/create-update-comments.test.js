@@ -61,6 +61,7 @@ describe("Create/Update Comments", () => {
   })
 
   test("Can update a comment", async () => {
+    console.log("comment", comment, testUser.email)
     const updateCommentResult = await CommentsDAO.updateComment(
       comment.id,
       testUser.email,
